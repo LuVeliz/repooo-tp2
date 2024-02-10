@@ -31,6 +31,11 @@ h4{
 	border:2px solid #000000;
 	text-align:center;
 }
+h5{
+	background-color:#9486CE;
+	font-size:20px;
+	height:50px;
+}
 p{
 	background: white;
 }
@@ -110,14 +115,93 @@ hr{
     margin-top:280px;
 }
 /* PRODUCTOOOOS*/
-
-
-
+.hprod{
+	text-align:center;
+	background:#ffffff;
+	margin-top:20px;
+	height:25px;
+	border: solid 2px #000000;
+}
+.prod1 , .prod2 , .prod3 , .prod4{
+	width:200px;
+	text-align:center;
+	margin: 20px 20px 20px 60px;
+	border :solid 2px #9486CE;
+	height:300px;
+	margin-bottom: 20px;
+	background:#f2e6ff;
+	border-radius: 8px;
+}
+.prod2{
+	margin: -322px 30px 50px 370px ;
+}
+.prod3{
+	margin: -352px 300px 50px 680px ;
+}
+.prod4{
+	margin: -355px 30px 50px 1000px ;
+}
+.titulo{
+		margin-top:20px;
+}
+#footerprod{
+	margin-top:-20px;
+}
 
 /*CONSEJOOOOOOOS*/
+#consejos{
+	margin-left:170px;
+	margin-top:50px;
+	margin-bottom:30px;
+}
 
-
-
+.conse{
+	width:29%;
+	border: solid 2px #000000;
+	border-radius:5px;
+	margin-left:10px;
+	text-align:center;
+	margin-left:45px;
+	height:130px;
+}
+.conse2{
+	width:29%;
+	border: solid 2px #000000;
+	border-radius:5px;
+	margin-left:10px;
+	text-align:center;
+	margin:auto;
+	margin-top:-133px;
+	height:130px;
+}
+.conse3{
+	width:29%;
+	border: solid 2px #000000;
+	border-radius:5px;
+	text-align:center;
+	margin-left:850px;
+	margin-top:-133px;
+	height:130px;
+}
+.conse4{
+	width:1170px;
+	margin:auto;
+	border: solid 2px #000000;
+	border-radius:5px;
+	text-align:center;
+	margin-top:20px;
+}
+.contconsejos{
+	height :100 px;
+	width:100%;
+	margin-top:20px;
+}
+.conse4h{
+	height:30px;
+}
+#footerc{
+	margin-top:20px;
+}
 /*PASEOOOOO*/
 .paseo{
 	font-style:italic;
@@ -142,22 +226,21 @@ table{
 }
 /*SUCURSALEEEES*/
 
-.derecha{
-   justify-content:right;
-   width:740px;
-   height: 65px;
-   float:right;
-   background:#BCA9FA;
-   margin-top:75px;
+.contenedor , .contenedor1 , .contenedor2{
+	height:325px;
+	width:400px;
+	margin-left:10px;
+	margin-top:20px;
+	border:solid 2px #000000;
 }
-
-.psucursal{
-	background: #BCA9FA;	
-	text-align:center;
+.contenedor1{
+	margin: -328px 10px 50px 430px ;
 }
-
+.contenedor2{
+	margin: -378px 10px 50px 850px ;
+}
 .fsucursal{
-	margin-top:10px;
+	margin-top:-30px;
 }
 /*CONTACTOOOOOOOS*/
 .con{

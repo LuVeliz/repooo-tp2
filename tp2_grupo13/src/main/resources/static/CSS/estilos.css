@@ -1,5 +1,7 @@
 /*@charset "ISO-8859-1";*/
 
+/*generico*/
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -11,8 +13,7 @@ h1{
 	text-align:center;
 	font-style:italic;
 	background:#7B5EDD;
-	color:white;
-	
+	color:white;	
 }
 h2{
 	font-style:italic;
@@ -33,24 +34,34 @@ h4{
 p{
 	background: white;
 }
+footer{
+	color: white;
+	background:gray;
+	text-align:center;
+	font-style: italic;
+	height:50px;
+	line-height:40px;
+	word-spacing:15px;
+	margin-top:70px;
+}
+/*INDEX*/
 body{
-	
 	background-color:#DCD6F0;
 	color:#000000;
 }
-ul{
+.ulindex{
 	list-style:none;
 	display:flex;
 	justify-content: center;
 	text-align:center;
 	display: inline-block;
-  	font-family: 'Roboto', sans-serif;
-  	font-size: 17px;
- 	line-height: 16px;
 }
 li{
 	padding:10px 3em;
 	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+ 	line-height: 16px;
 }
 nav{
 	text-align:center;
@@ -60,17 +71,14 @@ nav{
 a{
 	color:white;
 }
-
-section{
+.index{
    justify-content:left;
    width:900px;
    border:2px solid #DCD6F0;
    float:left;
    height: 270px;
    background:white;
-  
 }
-
 aside{
    justify-content:right;
    width:351px;
@@ -91,7 +99,7 @@ aside{
 hr{
 	color:#000000;
 }
-footer{
+.footerindex{
 	color: white;
 	background:gray;
 	text-align:center;
@@ -99,11 +107,96 @@ footer{
 	height:50px;
 	line-height:40px;
 	word-spacing:15px;
-    margin-top : 280px;
+    margin-top:280px;
 }
+/* PRODUCTOOOOS*/
+
+
+
+
+/*CONSEJOOOOOOOS*/
+
+
+
 /*PASEOOOOO*/
 .paseo{
 	font-style:italic;
 	height:auto;
-	
 }
+
+.paseos{
+	margin-top:20px;
+}
+table{
+	margin:auto;
+	margin-top:20px;
+	width:1200px;
+	height:200px;
+	text-align:center;
+}
+.color{
+	background:#7B5EDD;
+	border-color:#000000;
+	color:white;
+	font-size: 25px;
+}
+/*SUCURSALEEEES*/
+
+.derecha{
+   justify-content:right;
+   width:740px;
+   height: 65px;
+   float:right;
+   background:#BCA9FA;
+   margin-top:75px;
+}
+
+.psucursal{
+	background: #BCA9FA;	
+	text-align:center;
+}
+
+.fsucursal{
+	margin-top:10px;
+}
+/*CONTACTOOOOOOOS*/
+.con{
+	border:4px solid #000000;
+	border-radius: 10px;
+	margin: 0 auto;
+    text-align: center;
+    width:520px;
+    height:380px;
+    vertical-align:middle;
+    background:#9486CE;
+    color :white;
+}
+.acontactos{
+	color:white;
+	text-align:center;
+	background:#9486CE;
+}
+.lista{
+	text-align:center;
+	background:#9486CE;
+}
+.pcontacto{
+	background:#9486CE;
+    color :white;
+}
+button{
+	width:100px;
+	height:30px;
+	border:2px solid #000000;
+	border-radius:10px;
+	background:#7B5EDD;
+	color:white;
+}
+input{
+	background:white;
+	margin-top:5px;
+}
+.footercontacto{
+	margin-top:20px;
+}	
+

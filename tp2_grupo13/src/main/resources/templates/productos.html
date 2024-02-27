@@ -1,53 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Productos</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body>
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = ../static/images/portada2.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = ../static/images/petshop.png title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = ../static/images/portada3.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav>
-		<ul type= "circle">
-			<li><a href= "index.html" > Inicio </a></li>
-			<li><a  href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<section> 
 		<article>
 			<h5 class="hprod">Alimento Para perro</h5>
 			<section class="prod1">
-				<img src = ../static/images/AlimentoparaPerro.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaPerro.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca:</strong> Maintenance Criadores</p>
 				<p><strong>Caracteristica:</strong>para perro adulto todos los tamaños sabor carne y pollo en bolsa de 22 kg </p>
 				<p><strong>Precio: </strong> $37.200</p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/AlimentoparaPerro2.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaPerro2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Royal Canin Size Health Nutrition Mini Adult</p>
 				<p><strong>Caracteristica: </strong> Para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg</p>
 				<p><strong>Precio: </strong> $33.500</p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/AlimentoparaPerro3.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaPerro3.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Dog Selection Criadores</p>
 				<p><strong>Caracteristica: </strong> Para perro adulto de raza mediana y grande sabor carne y pollo en bolsa de 21 kg</p>
 				<p><strong>Precio: </strong> $26.848</p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/AlimentoparaPerro4.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaPerro4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong>Raza</p>
 				<p><strong>Caracteristica: </strong> Para perro adulto raza mediana.Comida seca.Sabor: carne.</p>
@@ -57,28 +43,28 @@
 		<article>
 			<h5 class="hprod">Alimento Para Gato</h5>
 			<section class="prod1">
-				<img src = ../static/images/AlimentoparaGato.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaGato.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Purina Excellent Adult </p>
 				<p><strong>Caracteristica: </strong>Para gato adulto sabor pollo y arroz en bolsa de 15 kg </p>
 				<p><strong>Precio: </strong> $56.800 </p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/AlimentoparaGato2.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaGato2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong>Catpro </p>
 				<p><strong>Caracteristica: </strong> Para gato adulto sabor mix en bolsa de 7.5 kg</p>
 				<p><strong>Precio: </strong> $25.308 </p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/AlimentoparaGato3.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaGato3.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Balanced Kitten de Vital Can </p>
 				<p><strong>Caracteristica: </strong>Tipo de comida: seca, premium, bolsa de 2 y 7,5 kilogramos, sabor mix. Etapa de vida: gatito. </p>
 				<p><strong>Precio: </strong> $9.400 </p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/AlimentoparaGato4.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/AlimentoparaGato4.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong>Purina Proplan </p>
 				<p><strong>Caracteristica: </strong> Para Gato Adulto Pollo Y Arroz - 3 Kg</p>
@@ -88,28 +74,28 @@
 		<article>
 			<h5 class="hprod">Alimento para Conejo y para Caballo</h5>
 			<section class="prod1">
-				<img src = ../static/images/AlimentoparaConejo.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaConejo.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Métrive </p>
 				<p><strong>Caracteristica: </strong>Alimento Balanceado para Conejo Adulto , bolsa de 25kg.</p>
 				<p><strong>Precio: </strong> $45000 </p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/AlimentoparaConejo2.png title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaConejo2.png}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> RedKite </p>
 				<p><strong>Caracteristica: </strong>Alimento  formulado y balanceado para conejo, contiene harina de alfalfa y maíz por 1k. </p>
 				<p><strong>Precio: </strong> $3200 </p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/AlimentoparaCaballo.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaCaballo.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong>  Equidiet  </p>
 				<p><strong>Caracteristica: </strong> Alimento Completo Para Caballos,balanceado y granulado ,Base 25kg</p>
 				<p><strong>Precio: </strong> $19.889</p>	
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/AlimentoparaCaballo2.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/AlimentoparaCaballo2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Equimix </p>
 				<p><strong>Caracteristica: </strong> Alimento Balanceado Caballos Potrillos Excelente 25kg</p>
@@ -119,28 +105,28 @@
 		<article>
 			<h5 class="hprod">Juguetes para Perro</h5>
 			<section class="prod1">
-				<img src = ../static/images/Juguete1.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Juguete1.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> CanCat </p>
 				<p><strong>Caracteristica: </strong> Tiene doble nudo,Anti-stress ,Confeccionada con materiales resistentes </p>
 				<p><strong>Precio: </strong> $3.090</p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/Juguete2.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Juguete2.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Puppis </p>
 				<p><strong>Caracteristica: </strong>  Fabricada 100% de vinilo, lo que la hace resistente y duradera.Ideal para que tu perro mastique y descargue su estrés de forma saludable.</p>
 				<p><strong>Precio: </strong> $2.470</p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/Juguete3.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Juguete3.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Dog toys </p>
 				<p><strong>Caracteristica: </strong>Frisbee Helice Flotador </p>
 				<p><strong>Precio: </strong> $9.250</p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/Juguete4.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Juguete4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Rascals </p>
 				<p><strong>Caracteristica: </strong> Dispensador de comida que te permite rellenarlo con snacks, fabricado con material durable y flexible que protege las encías de tu mascota.</p>
@@ -150,28 +136,28 @@
 		<article>
 			<h5 class="hprod">Accesorios</h5>
 			<section class="prod1">
-				<img src = ../static/images/Accesorio1.webp title = "Mascotitas" alt="Logo " width="120" height="150">
+				<img th:src = "@{images/Accesorio1.webp}" title = "Mascotitas" alt="Logo " width="120" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Animal Pet </p>
 				<p><strong>Caracteristica: </strong> Comedero Bebedero Animal Pet Circular Verde - M </p>
 				<p><strong>Precio: </strong> $9.050 </p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/Accesorio2.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Accesorio2.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong>  Furacao Pet </p>
 				<p><strong>Caracteristica: </strong> Cucha plastica Azul</p>
 				<p><strong>Precio: </strong> $56.790</p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/Accesorio3.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Accesorio3.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Oasis </p>
 				<p><strong>Caracteristica: </strong> Buzo Abrigo Ropa Polar Para Mascota Talles Grandes </p>
 				<p><strong>Precio: </strong> $7.641</p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/Accesorio4.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Accesorio4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Beautifull Regalos </p>
 				<p><strong>Caracteristica: </strong> Cardina Cepillo Saca Pelo Mascota Autolimpiante.</p>
@@ -180,28 +166,28 @@
 		</article>
 		<article>
 			<section class="prod1">
-				<img src = ../static/images/Accesorio5.webp title = "Mascotitas" alt="Logo " width="120" height="150">
+				<img th:src = "@{images/Accesorio5.webp}" title = "Mascotitas" alt="Logo " width="120" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Living World </p>
 				<p><strong>Caracteristica: </strong> Kit Arnes Y Correa Para Conejo Roedor Adulto </p>
 				<p><strong>Precio: </strong> $13.080 </p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/Accesorio6.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Accesorio6.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Deluxe  </p>
 				<p><strong>Caracteristica: </strong> Bebedero Chupete de 125 Ml Hamster Roedor Cobayo Conejo</p>
 				<p><strong>Precio: </strong> $3.340 </p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/Accesorio7.webp title = "Mascotitas" alt="Logo " width="130" height="150">
+				<img th:src = "@{images/Accesorio7.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> HKM </p>
 				<p><strong>Caracteristica: </strong> Jacaranda Bozal Cabestro Antipánico Y Frentera Mosquitera </p>
 				<p><strong>Precio: </strong> $52.889 </p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/Accesorio8.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Accesorio8.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Mascopado_Accesorios  </p>
 				<p><strong>Caracteristica: </strong> Collar Elastizado Regulable Para Gatos </p>
@@ -211,28 +197,28 @@
 		<article>
 			<h5 class="hprod" >Cuidado de para tu mascota</h5>
 			<section class="prod1">
-				<img src = ../static/images/Cuidado1.webp title = "Mascotitas" alt="Logo " width="150" height="170">
+				<img th:src = "@{images/Cuidado1.webp}" title = "Mascotitas" alt="Logo " width="150" height="170">
 				<hr>
 				<p><strong>Marca:</strong> Power Ultra </p>
 				<p><strong>Caracteristica:</strong>  1 Pipeta - 5-10Kg </p>
 				<p><strong>Precio: </strong> $2.300</p>
 			</section>
 			<section class="prod2">
-				<img src = ../static/images/Cuidado2.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Cuidado2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> SUPEQ </p>
 				<p><strong>Caracteristica: </strong> Línea Completa De Suplementos Nutricionales Para Equinos </p>
 				<p><strong>Precio: </strong> $65.000</p>
 			</section>
 			<section class="prod3">
-				<img src = ../static/images/Cuidado3.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Cuidado3.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> DRONTAL </p>
 				<p><strong>Caracteristica: </strong>Antiparasitario para Gatos Interno BLISTER 2 comprimidos BAYER ELANCO </p>
 				<p><strong>Precio: </strong> $ 7.372</p>
 			</section>
 			<section class="prod4">
-				<img src = ../static/images/Cuidado4.webp title = "Mascotitas" alt="Logo " width="100" height="150">
+				<img th:src = "@{images/Cuidado4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Total Full CG  </p>
 				<p><strong>Caracteristica: </strong> Antiparasitario Interno Para Perros Y Gatos - 15 Cc </p>
@@ -240,6 +226,6 @@
 			</section>
 		</article>	
 		</section>
-		<footer id="footerprod">Copyright 2024 - MASCOTITAS - Grupo 13 - Argentina</footer>
+		<footer th:replace="layouts/footer :: footer"></footer>
 	</body>
 </html>

@@ -282,4 +282,18 @@ input{
 .footercontacto{
 	margin-top:20px;
 }	
+/*Nuevo Productooooooo */
+
+form {
+	background:#7B5EDD;
+	margin: 0 auto;
+	border: 3px solid #000000;
+	border-radius: 3px;
+	text-align: center;
+    width:420px;
+    height:280px;
+    vertical-align:middle;
+	    margin-top:30px;
+}
+
 

@@ -1,32 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="UTF-8">
 		<title>Servicio de Paseo</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body>
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = ../static/images/portada2.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = ../static/images/petshop.png title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = ../static/images/portada3.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav>
-		<ul type= "circle">
-			<li><a href= "index.html" > Inicio </a></li>
-			<li><a  href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
+		<header th:replace="layouts/header :: header"></header>
+		<nav th:replace="layouts/nav :: nav"></nav>
 		<h2 >Horarios de Paseos</h2>
 		<section class="paseo">
 		<table border="1">
 		<tr>
-		<td class="color">Día</td>
+		<td class="color">DÃ­a</td>
 		<td class="color">Lunes</td>
 		<td class="color" >Martes</td>
 		<td class="color">Miercoles</td>
@@ -55,6 +41,6 @@
 		</table>
 		<p>                             </p>
 		</section>
-		<footer class="paseos">Copyright 2024 - MASCOTITAS - Grupo 13 - Argentina</footer>
+		<footer th:replace= "layouts/footer :: footer"></footer>
 	</body>
 </html>

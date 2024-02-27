@@ -1,27 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="UTF-8">
 		<title>Index</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body class="indexbody">
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = ../static/images/portada2.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = ../static/images/petshop.png title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = ../static/images/portada3.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav>
-		<ul type= "circle" class="ulindex">
-			<li class="liindex"><a href= "index.html" > Inicio </a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<br>
 		<section class="index">
 			<article>
@@ -45,6 +31,6 @@
   			<p>Exploramos las últimas innovaciones en juguetes para gatos que van más allá de las pelotas y ratones tradicionales. Los juguetes interactivos, algunos con tecnología incorporada, están en aumento, proporcionando estimulación mental y física para nuestros amigos felinos.</p>
 		</aside>
 		<br>
-		<footer class="footerindex">Copyright 2024 - MASCOTITAS - Grupo 13 - Argentina</footer>
+		<footer th:replace="~{layouts/footer :: footer}"></footer>
 	</body>
 </html>

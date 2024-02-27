@@ -1,42 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Sucursales</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body class="suc">
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = ../static/images/portada2.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = ../static/images/petshop.png title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = ../static/images/portada3.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav>
-		<ul type= "circle">
-			<li><a href= "index.html" > Inicio </a></li>
-			<li><a  href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<h2>Visitanos en : </h2>
 			<section class="contenedor">
-				<img src="../static/images/sucursal1.jfif" title = "Mascotitas" alt="SUCURSAL 1 " width="400" height="260"> 
+				<img th:src="@{images/sucursal1.jfif}" title = "Mascotitas" alt="SUCURSAL 1 " width="400" height="260"> 
 				<h4>Horarios de Atencion</h4>
 				<p class="psucursal"> Dirección: Calle José Ortega y Gasset,</p>
 				<p class="psucursal">Lunes a Viernes de 8 a 14hs y de 18 a 21hs</p>
 			</section>
 			<section class="contenedor1">
-			<img src="../static/images/sucursal2.png" title = "Mascotitas" alt="SUCURSAL 2 " width="400" height="260"> 
+			<img th:src="@{images/sucursal2.png}" title = "Mascotitas" alt="SUCURSAL 2 " width="400" height="260"> 
 			<h4>Horarios de Atencion</h4>
 			<p class="psucursal">Dirección: Calle Puerta de Granada, 19, 18690.</p>
 			<p class="psucursal">Lunes a Viernes de 8 a 12hs y de 16 a 21hs</p>
 			</section>
 			<section class="contenedor2">
-			<img src="../static/images/sucursal3.jfif" title = "Mascotitas" alt="SUCURSAL 3 " width="400" height="260"> 
+			<img th:src="@{images/sucursal3.jfif}" title = "Mascotitas" alt="SUCURSAL 3 " width="400" height="260"> 
 			<h4>Horarios de Atencion</h4>
 			<p class="psucursal">Dirección: Calle Leonardo da Vinci, 7, 41092.</p>
 			<p class="psucursal">Lunes a Viernes de 10 a 14hs y de 18 a 20hs</p>

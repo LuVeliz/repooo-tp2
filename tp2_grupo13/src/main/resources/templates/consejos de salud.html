@@ -1,62 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="UTF-8">
 		<title>Insert title here</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body>
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = ../static/images/portada2.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = ../static/images/petshop.png title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = ../static/images/portada3.jpg title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav>
-		<ul type= "circle">
-			<li><a href= "index.html" > Inicio </a></li>
-			<li><a  href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<h2>Consejos de Salud</h2>
 		<section>
-		
-		<img id="consejos" src = ../static/images/consejosdesalud.jfif title = "Mascotitas" alt="Consejos de salud " width="900" height="300">
+		<img id="consejos" th:src = "@{images/consejosdesalud.jfif}" title = "Mascotitas" alt="Consejos de salud " width="900" height="300">
 		<section class="contconsejos">
 		<article class="conse">
-		<h5 > Programa Revisiones Veterinarias Periódicas:</h5>
-		<p>Asegúrate de que tu mascota reciba chequeos veterinarios regulares. Las revisiones periódicas son clave para detectar y abordar problemas de salud antes de que se conviertan en mayores preocupaciones.</p>
+		<h5 > Programa Revisiones Veterinarias PeriÃ³dicas:</h5>
+		<p>AsegÃºrate de que tu mascota reciba chequeos veterinarios regulares. Las revisiones periÃ³dicas son clave para detectar y abordar problemas de salud antes de que se conviertan en mayores preocupaciones.</p>
 		</article>
 		<article class="conse2">
-		<h5>Mantén un Peso Saludable</h5>
-		<p>Controla la alimentación y el nivel de actividad para prevenir la obesidad en tu mascota. Un peso saludable contribuye a la longevidad y evita problemas de salud como la diabetes y las enfermedades articulares.</p>
+		<h5>MantÃ©n un Peso Saludable</h5>
+		<p>Controla la alimentaciÃ³n y el nivel de actividad para prevenir la obesidad en tu mascota. Un peso saludable contribuye a la longevidad y evita problemas de salud como la diabetes y las enfermedades articulares.</p>
 		</article>
 		<article class="conse3">
 		<h5>Proporciona una Dieta Equilibrada</h5>
-		<p>Ofrece a tu mascota una dieta equilibrada y adaptada a sus necesidades específicas. Consulta con tu veterinario para determinar la mejor alimentación según la raza, tamaño, edad y nivel de actividad de tu mascota.</p>
+		<p>Ofrece a tu mascota una dieta equilibrada y adaptada a sus necesidades especÃ­ficas. Consulta con tu veterinario para determinar la mejor alimentaciÃ³n segÃºn la raza, tamaÃ±o, edad y nivel de actividad de tu mascota.</p>
 		</article>
 		</section>
 		<section class="contconsejos">
 		<article class="conse">
 		<h5> Ejercicio Regular</h5>
-		<p>La actividad física es esencial para mantener a tu mascota en forma y feliz. Paseos diarios, tiempo de juego y actividades interactivas ayudan a prevenir la obesidad y promueven la salud cardiovascular.</p>
+		<p>La actividad fÃ­sica es esencial para mantener a tu mascota en forma y feliz. Paseos diarios, tiempo de juego y actividades interactivas ayudan a prevenir la obesidad y promueven la salud cardiovascular.</p>
 		</article>
 		<article class="conse2">
-		<h5>Control de Parásitos</h5>
-		<p>Mantén a tu mascota libre de parásitos internos y externos. Usa productos antipulgas y garrapatas, y programa desparasitaciones regulares según las indicaciones de tu veterinario.</p>
+		<h5>Control de ParÃ¡sitos</h5>
+		<p>MantÃ©n a tu mascota libre de parÃ¡sitos internos y externos. Usa productos antipulgas y garrapatas, y programa desparasitaciones regulares segÃºn las indicaciones de tu veterinario.</p>
 		</article>
 		<article class="conse3">
 		<h5>Monitorea el Comportamiento</h5>
-		<p>Presta atención a los cambios en el comportamiento de tu mascota. La apatía, cambios en el apetito o en los patrones de sueño pueden ser signos de problemas de salud, y es importante abordarlos rápidamente.</p>
+		<p>Presta atenciÃ³n a los cambios en el comportamiento de tu mascota. La apatÃ­a, cambios en el apetito o en los patrones de sueÃ±o pueden ser signos de problemas de salud, y es importante abordarlos rÃ¡pidamente.</p>
 		</article>
 		</section>
 		<article class="conse4">	
 		<h5 class="conse4h">Proporciona Agua Fresca y Limpia</h5>
-		<p>Asegúrate de que tu mascota siempre tenga acceso a agua limpia y fresca. La hidratación adecuada es esencial para el buen funcionamiento de los órganos y el sistema circulatorio.</p>
+		<p>AsegÃºrate de que tu mascota siempre tenga acceso a agua limpia y fresca. La hidrataciÃ³n adecuada es esencial para el buen funcionamiento de los Ã³rganos y el sistema circulatorio.</p>
 		</article>
 		</section>
 		<footer id="footerc">Copyright 2024 - MASCOTITAS - Grupo 13 - Argentina</footer>

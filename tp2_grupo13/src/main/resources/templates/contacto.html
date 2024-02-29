@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="UTF-8">
 		<title>Contactos</title>
 		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body class="contactos">
 		<header th:replace ="~{layouts/header :: header}"></header>
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
-	<h2>Contáctenos!</h2>
+	<h2>ContÃ¡ctenos!</h2>
 		<br>
 		<section class="con">
 		<p class="pcontacto">3915 Av General Belgrano, 388-4999999</p>
 		<p class="pcontacto">Lunes a Viernes : 9:00 a. m. a 8:00 p. m.</p>
-		<p class="pcontacto">Sábado a Domingo : 9:00 a. m. a 12:30 p. m.</p>
+		<p class="pcontacto">SÃ¡bado a Domingo : 9:00 a. m. a 12:30 p. m.</p>
 		<a class ="acontactos" href= www.gmail.com> contactos@mail.com</a>
 		<hr>
 		<ul class="lista" >
@@ -29,6 +29,6 @@
 		<p class="pcontacto">Mensaje<input type="text" style="WIDTH: 390px; HEIGHT: 98px" size=32 > </p>
 		<button>Enviar</button>
 		</section>
-	<footer th:replace="layouts/footer :: footer"></footer>
+	<footer th:replace="~{layouts/footer :: footer}"></footer>
 	</body>
 </html>

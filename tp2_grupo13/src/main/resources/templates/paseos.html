@@ -6,8 +6,8 @@
 		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body>
-		<header th:replace="layouts/header :: header"></header>
-		<nav th:replace="layouts/nav :: nav"></nav>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<h2 >Horarios de Paseos</h2>
 		<section class="paseo">
 		<table border="1">
@@ -41,6 +41,6 @@
 		</table>
 		<p>                             </p>
 		</section>
-		<footer th:replace= "layouts/footer :: footer"></footer>
+		<footer th:replace= "~{layouts/footer :: footer}"></footer>
 	</body>
 </html>

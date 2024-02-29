@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<meta charset="ISO-8859-1">
-		<title>Insert title here</title>
-		<link rel="stylesheet" href="../static/CSS/estilos.css">
+		<meta charset="UTF-8">
+		<title>Nuevo Producto</title>
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
 	<body>
-		<header>
-		<h1>MASCOTITAS</h1>
-		<img class = portada1 src = " ../static/images/portada2.jpg" title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada src = "../static/images/petshop.jpg" title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 src = "../static/images/portada3.jpg" title = "Mascotitas" alt="Logo " width="250" height="230">
-		</header>
-		<nav >
-		<ul type= "circle" class="ulindex">
-			<li class="liindex"><a href= "index.html" > Inicio </a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="consejos de salud.html">Consejos de salud</a></li>
-			<li><a href="paseos.html">Servicios de Paseos</a></li>
-			<li><a href="sucursales.html">Sucursales</a></li>
-			<li><a href="contacto.html">Contactanos</a></li>
-		</ul>
-		</nav>
-		<form>
-		<label>Nombre del Producto</label><br>
-		<input type="text"> <br>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
+		<form th:action="@{/guardar}" th:object="${producto}" method="post">
+		<label>Nombre del Producto</label> <br>
+		<input type="text" id="nombre" name="producto_nombre" th:field="*{nombre}"> <br>
 		<label>Codigo del Producto</label> <br>
-		<input type="text"> <br>
+		<input type="text" id="codigo" name="codigo_producto" th:field="*{codigo}"> <br>
 		<label>Precio del Producto</label> <br>
-		<input type="text"> <br>
+		<input type="text" id="precio" name="precio_producto" th:field="*{precio}"> <br>
 		<label>Categoria del Producto</label> <br>
-		<input type="text"> <br>
+		<input type="text" id="categoria" name="categoria_producto" th:field="*{categoria}"> <br>
 		<label>Descuento del Producto</label> <br>
-		<input type="text"> <br>
+		<input type="text" id="descuento" name="descuento_producto" th:field="*{descuento}"> <br>
 		<input type="submit" value="guardar">
 		</form>
 	</body>

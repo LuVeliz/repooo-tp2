@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="UTF-8">
 		<title>Productos</title>
 		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
 	</head>
@@ -10,19 +10,21 @@
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<section> 
 		<article>
+			<a class="link" th:href="@{/listadoproductos}"> Listar Productos </a>
+			<a class="link" th:href="@{/nuevo_producto}"> Agregar Producto </a>
 			<h5 class="hprod">Alimento Para perro</h5>
 			<section class="prod1">
 				<img th:src = "@{images/AlimentoparaPerro.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca:</strong> Maintenance Criadores</p>
-				<p><strong>Caracteristica:</strong>para perro adulto todos los tamaños sabor carne y pollo en bolsa de 22 kg </p>
+				<p><strong>Caracteristica:</strong>para perro adulto todos los tamaÃ±os sabor carne y pollo en bolsa de 22 kg </p>
 				<p><strong>Precio: </strong> $37.200</p>
 			</section>
 			<section class="prod2">
 				<img th:src = "@{images/AlimentoparaPerro2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Royal Canin Size Health Nutrition Mini Adult</p>
-				<p><strong>Caracteristica: </strong> Para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg</p>
+				<p><strong>Caracteristica: </strong> Para perro adulto de raza pequeÃ±a sabor mix en bolsa de 7.5 kg</p>
 				<p><strong>Precio: </strong> $33.500</p>
 			</section>
 			<section class="prod3">
@@ -76,7 +78,7 @@
 			<section class="prod1">
 				<img th:src = "@{images/AlimentoparaConejo.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
-				<p><strong>Marca: </strong> Métrive </p>
+				<p><strong>Marca: </strong> MÃ©trive </p>
 				<p><strong>Caracteristica: </strong>Alimento Balanceado para Conejo Adulto , bolsa de 25kg.</p>
 				<p><strong>Precio: </strong> $45000 </p>
 			</section>
@@ -84,7 +86,7 @@
 				<img th:src = "@{images/AlimentoparaConejo2.png}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> RedKite </p>
-				<p><strong>Caracteristica: </strong>Alimento  formulado y balanceado para conejo, contiene harina de alfalfa y maíz por 1k. </p>
+				<p><strong>Caracteristica: </strong>Alimento  formulado y balanceado para conejo, contiene harina de alfalfa y maÃ­z por 1k. </p>
 				<p><strong>Precio: </strong> $3200 </p>
 			</section>
 			<section class="prod3">
@@ -115,7 +117,7 @@
 				<img th:src = "@{images/Juguete2.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Puppis </p>
-				<p><strong>Caracteristica: </strong>  Fabricada 100% de vinilo, lo que la hace resistente y duradera.Ideal para que tu perro mastique y descargue su estrés de forma saludable.</p>
+				<p><strong>Caracteristica: </strong>  Fabricada 100% de vinilo, lo que la hace resistente y duradera.Ideal para que tu perro mastique y descargue su estrÃ©s de forma saludable.</p>
 				<p><strong>Precio: </strong> $2.470</p>
 			</section>
 			<section class="prod3">
@@ -129,7 +131,7 @@
 				<img th:src = "@{images/Juguete4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Rascals </p>
-				<p><strong>Caracteristica: </strong> Dispensador de comida que te permite rellenarlo con snacks, fabricado con material durable y flexible que protege las encías de tu mascota.</p>
+				<p><strong>Caracteristica: </strong> Dispensador de comida que te permite rellenarlo con snacks, fabricado con material durable y flexible que protege las encÃ­as de tu mascota.</p>
 				<p><strong>Precio: </strong> $18.210</p>
 			</section>
 		</article>
@@ -183,7 +185,7 @@
 				<img th:src = "@{images/Accesorio7.webp}" title = "Mascotitas" alt="Logo " width="130" height="150">
 				<hr>
 				<p><strong>Marca: </strong> HKM </p>
-				<p><strong>Caracteristica: </strong> Jacaranda Bozal Cabestro Antipánico Y Frentera Mosquitera </p>
+				<p><strong>Caracteristica: </strong> Jacaranda Bozal Cabestro AntipÃ¡nico Y Frentera Mosquitera </p>
 				<p><strong>Precio: </strong> $52.889 </p>
 			</section>
 			<section class="prod4">
@@ -207,7 +209,7 @@
 				<img th:src = "@{images/Cuidado2.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> SUPEQ </p>
-				<p><strong>Caracteristica: </strong> Línea Completa De Suplementos Nutricionales Para Equinos </p>
+				<p><strong>Caracteristica: </strong> LÃ­nea Completa De Suplementos Nutricionales Para Equinos </p>
 				<p><strong>Precio: </strong> $65.000</p>
 			</section>
 			<section class="prod3">
@@ -226,6 +228,6 @@
 			</section>
 		</article>	
 		</section>
-		<footer th:replace="layouts/footer :: footer"></footer>
+		<footer th:replace="~{layouts/footer :: footer}"></footer>
 	</body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
+	</head>
+	<body>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
+		<h2>Listado de Productos</h2>
+		<table border="1">
+			<tr>
+				<th class="color">Producto</th>
+				<th class="color">Codigo</th>
+				<th class="color">Precio</th>
+				<th class="color" >Categoria</th>
+				<th class="color">Descuento</th>
+			</tr>
+			<tr th:each="prod: ${productos}">
+				<th th:text="${prod.nombre}"></th>
+				<th th:text="${prod.codigo}"></th>
+				<th th:text= "${prod.precio}"></th>
+				<th th:text="${prod.categoria}"></th>
+				<th th:text="${prod.descuento}"></th>
+			</tr>
+		</table>
+	</body>
+	<footer th:replace="~{layouts/footer :: footer}"></footer>
+</html>

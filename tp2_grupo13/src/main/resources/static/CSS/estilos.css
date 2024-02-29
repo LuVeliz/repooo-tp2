@@ -295,5 +295,14 @@ form {
     vertical-align:middle;
 	    margin-top:30px;
 }
-
+/*listado productooos*/
+.link{
+	background:#ffffff;
+	color:#000000;
+	border: 2px solid;
+	width:200px;
+	height:30px;
+	margin-right:100px;
+	margin-left:300px;
+}
 

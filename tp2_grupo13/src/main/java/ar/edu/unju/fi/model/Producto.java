@@ -6,6 +6,12 @@ public class Producto {
 	Double precio;
 	String categoria;
 	int descuento;
+	
+	
+	
+	public Producto() {
+		super();
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -50,4 +56,5 @@ public class Producto {
 		resultado=precio-descuento;
 		return resultado;
 	}
+	
 }

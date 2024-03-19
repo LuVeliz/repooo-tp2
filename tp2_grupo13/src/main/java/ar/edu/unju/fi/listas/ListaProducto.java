@@ -3,11 +3,11 @@ import java.util.ArrayList;
 import java.util.List;
 import ar.edu.unju.fi.model.Producto;
 
-public class ListaProductos {
+public class ListaProducto {
 	private static List<Producto> productos;
 
 	
-	public ListaProductos() {
+	public ListaProducto() {
 		productos= new ArrayList<Producto>();
 		productos.add( new Producto("Alimento",234, 12.322,"Alimento",40));
 		productos.add(new Producto("Correa",123,7.430,"Juguete",20));
@@ -20,6 +20,6 @@ public class ListaProductos {
 	}
 
 	public void setProductos(List<Producto> productos) {
-		ListaProductos.productos = productos;
+		ListaProducto.productos = productos;
 	}
 }

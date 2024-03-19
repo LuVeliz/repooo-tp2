@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<title>Index</title>
-		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
-	</head>
+	<head th:replace="~{layouts/head :: head ('index')}"></head>
 	<body class="indexbody">
 		<header th:replace="~{layouts/header :: header}"></header>
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<br>
 		<section class="index">
-			<article>
+			<article class=" col-xs-12 col-sm-12 col-md-12 col-lg-13 col-xl-12 " >
 			<h2>Propósito de Nuestra Tienda de Mascotas: Un Refugio para el Bienestar Animal</h2>
 			<p>Bienvenidos a MASCOTITAS, un espacio dedicado al amor y cuidado de nuestras adoradas mascotas. En el corazón de nuestra misión se encuentra el compromiso inquebrantable de mejorar la calidad de vida de los animales y fortalecer el vínculo único que compartimos con ellos</p>
 			</article>
-			<article>
+			
+			<article class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<h2>Consejos y Recursos para Cuidadores Responsables</h2>
 			<p>En nuestra página web, no solo encontrarás productos excepcionales, sino también valiosos recursos y consejos para cuidar de tu mascota de la mejor manera posible. Desde guías de entrenamiento hasta consejos de alimentación, nos esforzamos por ser un aliado confiable en el viaje de cuidado animal.</p>
 			</article>
-			<article>
+			<article class="  col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<h2>Diversidad para Todo Tipo de Amigos Peludos:</h2>
 			<p>Sabemos que cada mascota es única, y es por eso que ofrecemos una amplia gama de productos adaptados a todas las formas, tamaños y personalidades. Ya sea que tenga un perro activo que ama correr y jugar o un gato que prefiere una tarde tranquila junto a la ventana, en <strong>MASCOTITAS</strong> encontrarás algo especial para cada uno.</p>
 			</article>
 		</section>
-		<aside>
+		<aside class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 ">
 			<h3>Noticias de tu interés</h3>
 			<p>Aprovecha ahora nuestro descuento del 30% en todos los productos. ¡No te pierdas esta oportunidad de ahorrar en tus compras!</p>
   			<p>Usa el código de descuento <strong>DESC30</strong> al finalizar tu compra.</p>

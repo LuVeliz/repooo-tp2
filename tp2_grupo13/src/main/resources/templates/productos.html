@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<title>Productos</title>
-		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
-	</head>
+	<head th:replace="~{layouts/head :: head ('productos')}"></head>
 	<body>
 		<header th:replace="~{layouts/header :: header}"></header>
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
 		<section> 
-		<article>
-			<a class="link" th:href="@{/listadoproductos}"> Listar Productos </a>
-			<a class="link" th:href="@{/nuevo_producto}"> Agregar Producto </a>
 			<h5 class="hprod">Alimento Para perro</h5>
 			<section class="prod1">
 				<img th:src = "@{images/AlimentoparaPerro.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
@@ -27,21 +20,20 @@
 				<p><strong>Caracteristica: </strong> Para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg</p>
 				<p><strong>Precio: </strong> $33.500</p>
 			</section>
-			<section class="prod3">
+			<section class="prod3 3">
 				<img th:src = "@{images/AlimentoparaPerro3.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong> Dog Selection Criadores</p>
 				<p><strong>Caracteristica: </strong> Para perro adulto de raza mediana y grande sabor carne y pollo en bolsa de 21 kg</p>
 				<p><strong>Precio: </strong> $26.848</p>
 			</section>
-			<section class="prod4">
+			<section class="prod4 ">
 				<img th:src = "@{images/AlimentoparaPerro4.webp}" title = "Mascotitas" alt="Logo " width="100" height="150">
 				<hr>
 				<p><strong>Marca: </strong>Raza</p>
 				<p><strong>Caracteristica: </strong> Para perro adulto raza mediana.Comida seca.Sabor: carne.</p>
 				<p><strong>Precio: </strong> $26.400</p>
 			</section>
-		</article>
 		<article>
 			<h5 class="hprod">Alimento Para Gato</h5>
 			<section class="prod1">
@@ -229,5 +221,6 @@
 		</article>	
 		</section>
 		<footer th:replace="~{layouts/footer :: footer}"></footer>
+		<script type = "text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap/bundle.mi.js}"></script>
 	</body>
 </html>

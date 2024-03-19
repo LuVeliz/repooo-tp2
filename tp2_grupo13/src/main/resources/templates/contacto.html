@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<title>Contactos</title>
-		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
-	</head>
+	<head th:replace="~{layouts/head :: head ('contacto')}"></head>
 	<body class="contactos">
 		<header th:replace ="~{layouts/header :: header}"></header>
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
@@ -23,12 +19,15 @@
 		</ul>
 		<hr>
 		<br>
-		<p class="pcontacto">Nombre <input type="text" style="WIDTH: 384px; HEIGHT: 25px" ></p>
-		<p class="pcontacto">Email : <input type="text" style="WIDTH: 390px; HEIGHT: 25px" ></p>
-		<p class="pcontacto">Ciudad <input type="text" style="WIDTH: 390px; HEIGHT: 25px" ></p>
-		<p class="pcontacto">Mensaje<input type="text" style="WIDTH: 390px; HEIGHT: 98px" size=32 > </p>
-		<button>Enviar</button>
+		<form th:action="@{/contactos/guardarContacto}" th:object="${contacto}" method="post"> 
+			<p class="pcontacto" >Nombre: <input type="text" id="nombreC" name="contacto_nombreC" th:field="*{nombreC}" style="WIDTH: 384px; HEIGHT: 25px" ></p>
+			<p class="pcontacto">Email : <input type="text" id="correo" name="contacto_correo" th:field="*{correo}" style="WIDTH: 390px; HEIGHT: 25px" ></p>
+			<p class="pcontacto">Ciudad <input type="text" id="ciudad" name="contacto_ciudad" th:field = *{ciudad} style="WIDTH: 390px; HEIGHT: 25px" ></p>
+			<p class="pcontacto">Mensaje<input type="text" id="mensaje" name="contacto_mensaje" th:field="*{mensaje}" style="WIDTH: 390px; HEIGHT: 98px" size=32 > </p>
+			<input type="submit" value="guardar">
+		</form>
 		</section>
+		<a th:href="@{/contactos/listado}"> Lista de Contactos</a>
 	<footer th:replace="~{layouts/footer :: footer}"></footer>
 	</body>
 </html>

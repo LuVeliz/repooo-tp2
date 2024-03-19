@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="~{layouts/head :: head ('listadoproductos')}"></head>
+	<body>
+		<header th:replace="~{layouts/header :: header}"></header>
+		<nav th:replace="~{layouts/nav :: nav}"></nav>
+		<h2>Listado de Contactos</h2>
+		<table border="1">
+		<tr>
+			<th class="color">Nombre</th>
+			<th class="color">Email</th>
+			<th class="color">Ciudad</th>
+			<th class="color" >Mensaje</th>
+		</tr>
+		<tr th:each="cont: ${contactos}">
+				<th th:text="${cont.nombreC}"></th>
+				<th th:text="${cont.correo}"></th>
+				<th th:text= "${cont.ciudad}"></th>
+				<th th:text="${cont.mensaje}"></th>
+		</tr>
+		</table>
+		<a th:href="@{/contactos/formulario}">Agregar Contacto</a>
+		<footer th:replace="~{layouts/footer :: footer}"></footer>
+	</body>
+</html>

@@ -1,13 +1,23 @@
  package ar.edu.unju.fi.model;
 
+import org.springframework.stereotype.Component;
+
+import jakarta.validation.constraints.*;
+
+@Component 
 public class Producto {
-	String nombre;
-	Integer codigo;
-	Double precio;
-	String categoria;
-	int descuento;
-	
-	
+	@NotEmpty
+	@Size(min = 2 , max = 10 ,message = "El nombre debe tener una longitud entre 2 y 10 caracteres")
+	private String nombre;
+	@Min (value = 1,message ="El codigo debe ser mayor que 0")
+	private Integer codigo;
+	@Min(value = 1,message="El precio debe ser mayor a 0")
+	private Double precio;
+	@NotBlank
+	private String categoria;
+	@Min( value = 1, message="El descuento debe ser mayor o igual a 0")
+	@Max(value = 50, message="El descuento debe ser menor o igual a 50")
+	private int descuento;
 	
 	public Producto() {
 		super();

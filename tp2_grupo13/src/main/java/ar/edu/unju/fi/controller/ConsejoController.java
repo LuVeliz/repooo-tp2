@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class PaseosController {
-	@GetMapping("/paseos")
-	public String getPaginaPaseos() {
-		return "paseos";
+public class ConsejoController {
+	@GetMapping("/consejos de salud")
+	public String getPaginaConsejos() {
+		return "consejos de salud";
 	}
 }

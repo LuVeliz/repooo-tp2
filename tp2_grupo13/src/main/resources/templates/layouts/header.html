@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
-	<head>
-		<meta charset="ISO-8859-1">
-	</head>
+	<head th:replace="~{layouts/head :: head ('index')}"></head>
 	<body>
 		<header th:fragment="header" >
 		<h1>MASCOTITAS</h1>
-		<img class = portada1 th:src = " @{images/portada2.jpg}" title = "Mascotitas" alt="Logo " width="250" height="230">
-		<img class = portada th:src = "@{images/petshop.jpg}" title = "Mascotitas" alt="Logo " width="750" height="230">
-		<img class = portada2 th:src = "@{images/portada3.jpg}" title = "Mascotitas" alt="Logo " width="250" height="230">
+		<img class = portada1 th:src = " @{/images/portada2.jpg}" title = "Mascotitas" alt="Logo " width="250" height="230">
+		<img class = portada th:src = "@{/images/petshop.jpg}" title = "Mascotitas" alt="Logo " width="750" height="230">
+		<img class = portada2 th:src = "@{/images/portada3.jpg}" title = "Mascotitas" alt="Logo " width="250" height="230">
 		</header>
 	</body>
 </html>

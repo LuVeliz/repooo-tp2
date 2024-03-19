@@ -62,11 +62,11 @@ body{
 	display: inline-block;
 }
 li{
-	padding:10px 3em;
+	padding:9px 2em;
 	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
- 	line-height: 16px;
+ 	line-height: 10px;
 }
 nav{
 	text-align:center;
@@ -92,17 +92,15 @@ aside{
    border:2px solid #DCD6F0;
    background:#BCA9FA;
 }
-.portada{
-    margin: auto;
-}
 .portada1{
-	margin:right;
-}
-.portada2{
-	margin:left;
+	margin-left:-20px;
 }
 hr{
 	color:#000000;
+}
+span{
+	color:#ffffff;
+	font-family:perpeta;
 }
 .footerindex{
 	color: white;
@@ -112,7 +110,7 @@ hr{
 	height:50px;
 	line-height:40px;
 	word-spacing:15px;
-    margin-top:280px;
+    margin-top:420px;
 }
 /* PRODUCTOOOOS*/
 .hprod{
@@ -300,9 +298,11 @@ form {
 	background:#ffffff;
 	color:#000000;
 	border: 2px solid;
-	width:200px;
 	height:30px;
 	margin-right:100px;
-	margin-left:300px;
+	margin-left:1050px;
 }
 
+.editar{
+	color : #000000;
+}

@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<title>Nuevo Producto</title>
-		<link rel="stylesheet" th:href="@{CSS/estilos.css}">
-	</head>
+	<head th:replace="~{layouts/head :: head ('nuevo_producto')}"></head>
 	<body>
 		<header th:replace="~{layouts/header :: header}"></header>
 		<nav th:replace="~{layouts/nav :: nav}"></nav>
-		<form th:action="@{/guardar}" th:object="${producto}" method="post">
-		<label>Nombre del Producto</label> <br>
+		<h3 th:text= "${edicion}?'Modificar Sucursal':'Nueva Sucursal'"></h3>
+		<form th:action="${edicion}?@{/producto/modificar}:@{/producto/guardar}" th:object="${producto}" method="post">
+		<label>Nombre del Producto</label> <br> 
 		<input type="text" id="nombre" name="producto_nombre" th:field="*{nombre}"> <br>
+		<span th:errors="*{nombre}" th:if="${#fields.hasErrors('nombre')}"></span> 
+		<br>
 		<label>Codigo del Producto</label> <br>
 		<input type="text" id="codigo" name="codigo_producto" th:field="*{codigo}"> <br>
+		<span th:errors="*{codigo}" th:if="${#fields.hasErrors('codigo')}"></span>
+		<br>
 		<label>Precio del Producto</label> <br>
 		<input type="text" id="precio" name="precio_producto" th:field="*{precio}"> <br>
+		<span th:errors="*{precio}" th:if="${#fields.hasErrors('precio')}"></span> <br>
 		<label>Categoria del Producto</label> <br>
 		<input type="text" id="categoria" name="categoria_producto" th:field="*{categoria}"> <br>
+		<span th:errors="*{categoria}" th:if="${#fields.hasErrors('categoria')}"></span><br>
 		<label>Descuento del Producto</label> <br>
 		<input type="text" id="descuento" name="descuento_producto" th:field="*{descuento}"> <br>
+		<span th:errors="*{descuento}" th:if="${#fields.hasErrors('descuento')}"></span> <br>
 		<input type="submit" value="guardar">
 		</form>
+		<footer th:replace="~{layouts/footer :: footer}"></footer>
 	</body>
 </html>
